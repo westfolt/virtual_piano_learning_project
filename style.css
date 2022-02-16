@@ -1,0 +1,49 @@
+body{
+    background: #366141;
+}
+kbd{
+    /*display: inline-block;*/
+    display: flex;
+    background: white;
+    border: solid #BFBFBF 3px;
+    height: 300px;
+    width: 80px;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 650px;
+    height: 310px;
+    flex-wrap: wrap;
+}
+.white-keys{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.black-keys{
+    position: absolute;
+    display: flex;
+    align-self: start;
+    z-index: 2;
+    margin-left: -80px;
+}
+.black-keys kbd{
+    background: black;
+    color: white;
+    width: 40px;
+    height: 150px;
+    border: none;
+    margin-left: 60px;
+}
